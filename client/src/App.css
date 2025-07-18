@@ -1,0 +1,23 @@
+/*
+  The global reset (*) has been removed as it now lives in index.css.
+  This file is for styles specific to the top-level App component.
+*/
+
+/*
+  This is a utility class for showing error messages. It's now styled
+  using our theme variables from index.css.
+  NOTE: To keep our code organized, we will eventually move this class
+  to 'src/Components/Common.css'.
+*/
+.Error_Message {
+  /* Using the --color-error variable we defined in index.css */
+  color: var(--color-error, #ef4444);
+  background-color: #fef2f2; /* A light red background to make it stand out */
+  border-left: 5px solid var(--color-error, #ef4444);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  text-align: left;
+}

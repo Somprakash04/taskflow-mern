@@ -1,0 +1,16 @@
+/* The main container for the entire page layout */
+.layout-container {
+  display: flex;
+  flex-direction: column; /* Stacks Navbar on top of main content */
+  min-height: 100vh;
+  background-color: var(--color-background); /* Uses variable from index.css */
+}
+
+/* The main content area that holds the page's content */
+.main-content {
+  flex-grow: 1; /* Allows this area to grow and fill the remaining vertical space */
+  width: 100%;
+  max-width: 1200px; /* Limits content width for better readability */
+  margin: 0 auto; /* Centers the content block horizontally */
+  padding: 2rem; /* Adds space inside the content area */
+}

@@ -1,0 +1,81 @@
+/* --- Import a Modern Font --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* --- CSS Variables for Sky Blue Theming --- */
+:root {
+  /* Fonts */
+  --font-primary: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+  /* Light Theme Colors (Sky Blue) */
+  --color-background: #e0f7ff;         /* Pale sky blue background */
+  --color-surface: #ffffff;            /* White cards/surfaces */
+  --color-primary: #38bdf8;            /* Sky blue primary */
+  --color-primary-hover: #0ea5e9;      /* Slightly deeper sky blue */
+  --color-text-primary: #0f172a;       /* Deep navy text */
+  --color-text-secondary: #64748b;     /* Muted slate blue-grey */
+  --color-border: #bae6fd;             /* Light blue border */
+
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  font-weight: 400;
+
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Dark Theme (Sky Blue variant for dark mode) --- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #0f172a;        /* Very dark navy background */
+    --color-surface: #1e293b;           /* Slightly lighter dark surface */
+    --color-primary: #38bdf8;           /* Same sky blue */
+    --color-primary-hover: #0ea5e9;
+    --color-text-primary: #e0f2fe;      /* Light blue text */
+    --color-text-secondary: #94a3b8;    /* Muted slate */
+    --color-border: #334155;            /* Dark slate border */
+  }
+}
+
+
+/* --- Modern CSS Reset --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Global Styles --- */
+body {
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--color-primary-hover);
+}
+
+/* Remove default button styles. We will style them in Button.css */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+  padding: 0;
+  font-size: inherit;
+}

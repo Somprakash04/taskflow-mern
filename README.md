@@ -60,7 +60,7 @@ project-root/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Yash106261/taskflow-mern.git
+git clone https://github.com/Somprakash04/taskflow-mern.git
 cd taskflow-mern
 ```
 
@@ -129,4 +129,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## ✨ Author
 
-Made with ❤️ by [Yash](https://github.com/Yash106261)
+Made with ❤️ by [Sp Arun](https://github.com/Somprakash04)
